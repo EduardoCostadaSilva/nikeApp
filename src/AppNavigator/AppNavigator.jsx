@@ -3,20 +3,23 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Feather } from '@expo/vector-icons';
 import { TouchableOpacity } from 'react-native';
-import Home from './pages/Home';
-import Detail from './pages/Detail';
-import LoginScreen from './pages/Login/Login';
+import Home from '../pages/Home/index';
+import Detail from '../pages/Detail/index';
+import LoginScreen from '../pages/Login/Login';
 
 const Stack = createStackNavigator();
-function Routes() {
+
+function AppNavigator() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+               
                 <Stack.Screen
                     name="Home"
                     component={Home}
                     options={{ headerShown: false }}
                 />
+                
                 <Stack.Screen
                     name="Detail"
                     component={Detail}
@@ -32,9 +35,9 @@ function Routes() {
                         )
                     }}
                 />
-                 <Stack.Screen name="Login" component={LoginScreen}/>
+                <Stack.Screen name="Login" component={LoginScreen}  options={{ headerShown: false }}/>
             </Stack.Navigator>
         </NavigationContainer>
     )
 }
-export default Routes;
+export default AppNavigator;

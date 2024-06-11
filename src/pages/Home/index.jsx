@@ -4,8 +4,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import Shoes from '../../components/Shoes';
 
-export default function Home() {
-    const navigation = useNavigation();
+export default function Home({navigation}) {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
