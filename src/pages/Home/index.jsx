@@ -1,7 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity, Button } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
 import Shoes from '../../components/Shoes';
 
 export default function Home({navigation}) {
@@ -58,6 +57,14 @@ export default function Home({navigation}) {
                         Nike Air Max Dia Sujeito Programador
                     </Shoes>
                 </View>
+                <Button 
+                onPress={() => navigation.navigate("PhotoPost")}
+                title='Publicar'
+                />
+                <Button 
+                title='Tela de feed'
+                onPress={() => navigation.navigate("FeedScreen")}
+                />
             </ScrollView>
         </View>
     );

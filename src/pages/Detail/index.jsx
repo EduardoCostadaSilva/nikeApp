@@ -1,8 +1,7 @@
 import React from 'react';
-import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
+import { View, Text, Image, ScrollView, StyleSheet, Button } from 'react-native';
 import Dot from '../../components/Dot';
 import SizeButton from '../../components/SizeButton';
-import Button from '../../components/Button/index';
 import Footer from '../../components/Footer';
 
 export default function Detail({navigation}) {
@@ -50,7 +49,7 @@ export default function Detail({navigation}) {
                     <Text style={styles.textList}>
                         - Material: Mesh
                     </Text>
-                    <Button />
+                    <Button onPress={() => navigation.navigate("LoginScreen")} title='Comprar'/>
                 </View>
 
                 

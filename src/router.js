@@ -5,7 +5,7 @@ import { Feather } from '@expo/vector-icons';
 import { TouchableOpacity } from 'react-native';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
-import LoginScreen from './pages/Login/Login';
+import LoginScreen from './pages/Login';
 
 const Stack = createStackNavigator();
 function Routes() {

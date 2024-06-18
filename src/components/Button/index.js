@@ -3,8 +3,8 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function Button() {
     return (
-        <View style={styles.container}>
-            <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+        <View style={styles.container} >
+            <TouchableOpacity>
                 <Text>Comprar</Text>
             </TouchableOpacity>
         </View>

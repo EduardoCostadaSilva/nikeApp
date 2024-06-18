@@ -1,6 +1,7 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { Button, Text, TextInput, View } from "react-native";
+import { auth } from "../../config/firebase";
 
 
 
@@ -32,7 +33,7 @@ export default function LoginScreen({navigation}) {
             value={senha}
             onChangeText={setSenha}
             />
-             <Button onPress={lolo} title="Meu butao"></Button>
+             <Button onPress={lolo} title="Logar"></Button>
         </View>
     )
 }
